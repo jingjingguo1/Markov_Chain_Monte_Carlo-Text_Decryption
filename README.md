@@ -1,6 +1,6 @@
 # STAT545-Computational-Statistics-Text-Decryption
 
-This is code for a course project on Text Decryption. This is a classic problem solved using Markov Chain Monte Carlo (MCMC) and Metropolis Hastings sampler. 
+This is code for a course project on Text Decryption solved using Markov Chain Monte Carlo (MCMC) and Metropolis Hastings sampler. 
 
 ### Problem Description:
 Text file __message.txt__ gives a paragraph of English encoded by a permutation code,
