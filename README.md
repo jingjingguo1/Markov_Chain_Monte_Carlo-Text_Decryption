@@ -16,6 +16,6 @@ are only 30 unique symbols, Symbol = ('a', 'b',. . . ,'z', ':', ';',' ' and ':')
 function &delta;: Symbol -> Symbol. We need to recover the original message (or equivalently find &delta;).
 
 ### Solution Overview:
-* Model the English Language as a Markov Chain, where each character is followed by the next per the 30x30 transition matrix __T__. Where the T<sub>ij</sub> is the probability of letter i followed by letter j.
+* Model the English Language as a Markov Chain, where each character is followed by the next per the 30x30 transition matrix __T__. Where the T<sub>ij</sub> is the probability of letter i followed by letter j. T is estimated using a big book, e.g. War and Peace.
 * Given X: encoded text message, then estimate Likelihood P(X|&delta;) = P<sub>Eng</sub>(&delta;<sup>-1</sup>|T), assume P(&delta;) is uniform, sample posterior P(&delta;|X).
 * Use Metropolis Hastings algorithm to sample posterior distribution, since the Markov chain will wander towards more likely &delta; the text will be more and more like the English language.
